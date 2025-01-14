@@ -4,6 +4,7 @@ import './App.css'
 //import Body from './Components/Home/Body.jsx';
 //import Footer from './Components/Home/Footer.jsx';
 import Home from './screens/Home.jsx';
+import Counter from './Components/Counter/Counter.jsx';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Body></Body>
       <Footer></Footer>*/}
       <Home />
+      <Counter />
     </>
   )
 }
