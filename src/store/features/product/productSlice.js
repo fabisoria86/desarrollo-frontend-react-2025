@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  initialValue: 10,
+  initialValue: 101,
   dataProduct: [ 
     { category: 'Electronics', price: '$199', stocked: true, name: 'iPhone' },
     { category: 'Electronics', price: '$99', stocked: true, name: 'Headphones' },

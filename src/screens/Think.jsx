@@ -1,7 +1,7 @@
 const Think = () => {
     return (
         <>
-            <p>Component About</p>
+            <p>Component Think</p>
         </>
     );
 }
