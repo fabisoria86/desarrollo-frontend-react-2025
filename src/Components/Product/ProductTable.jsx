@@ -3,11 +3,15 @@ import ProductCategoryRow from './ProductCategoryRow';
 import ProductRow from './ProductRow';
 
 const products = [
-  { category: 'Electronics', price: '$199', stocked: true, name: 'iPhone' },
-  { category: 'Electronics', price: '$99', stocked: true, name: 'Headphones' },
-  { category: 'Electronics', price: '$254', stocked: true, name: 'radio' },
-  { category: 'Furniture', price: '$399', stocked: false, name: 'Chair' },
-  { category: 'Clothing', price: '$29', stocked: true, name: 'T-Shirt' },
+    { category: 'Electronics', price: '$199', stocked: true, name: 'iPhone' },
+    { category: 'Electronics', price: '$99', stocked: true, name: 'Headphones' },
+    { category: 'Electronics', price: '$254', stocked: true, name: 'radio' },
+    { category: 'Furniture', price: '$399', stocked: false, name: 'Chair' },
+    { category: 'Furniture', price: '$715', stocked: true, name: 'desk' },
+    { category: 'Furniture', price: '$531', stocked: true, name: 'easy chair' },
+    { category: 'Clothing', price: '$29', stocked: true, name: 'T-Shirt' },
+    { category: 'Clothing', price: '$77', stocked: false, name: 'Pants' },
+    { category: 'Clothing', price: '$43', stocked: true, name: 'shirt' },
 ];
 
 const ProductTable = ({ searchText, selectedCategory }) => {
@@ -24,7 +28,6 @@ const ProductTable = ({ searchText, selectedCategory }) => {
 
   return (
     <div>
-      {/* Checkbox para filtrar por productos en stock */}
       <div style={{ marginBottom: '10px' }}>
         <label>
           <input
