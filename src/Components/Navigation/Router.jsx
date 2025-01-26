@@ -6,12 +6,15 @@ import Login from "../../screens/Login.jsx";
 import Think from "../../screens/Think.jsx";
 import About from "../../screens/About.jsx";
 
+import LandingPage from "../LandingPage";
+
 import { Routes, Route } from "react-router";
 
 const Router = () => {
     return (
         <Routes>
-            <Route index element={<Home />} />
+            <Route path="/" element={<LandingPage />} />
+           
             <Route path="login" element={<Login />} />
             <Route path="products" element={<Product />} />
             <Route path="think" element={<Think />} />

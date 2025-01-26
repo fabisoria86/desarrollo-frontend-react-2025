@@ -1,8 +1,7 @@
-import { useState } from "react";
+import { useState, useCallback  } from "react";
 
 const useForm = (initialState ={}) => {
     const [formData, setFormData] = useState(initialState);
-
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -11,14 +10,26 @@ const useForm = (initialState ={}) => {
         });
     };
 
-    const resetForm = () =>{
-        setFormData(initialState);
-    };
+    const resetForm = useCallback((newValues = initialState) => {
+        setFormData(newValues);
+    }, [initialState]);
+
+
+    const clearForm = () => {
+        setFormData({
+          username: "",
+          email: "",
+          password: "",
+          module: "",
+        });
+      };
+
 
     return {
         formData,
         handleChange,
         resetForm,
+        clearForm
     };
     
 };

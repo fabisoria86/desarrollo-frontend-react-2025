@@ -8,6 +8,8 @@ import './App.css'
 //import Product from './screens/Product.jsx';
 import Navigator from './Components/Navigation/Navigator.jsx'
 import Router from './Components/Navigation/Router.jsx'
+import LandingPage from './Components/LandingPage';
+import AppRouter from './Components/Navigation/Router.jsx';
 
 function App() {
   return (
@@ -21,7 +23,8 @@ function App() {
       <br />
       <Product />*/}
       <Navigator />
-      <Router />
+       {/*<Router />*/}
+      <AppRouter />
     </>
   )
 }
